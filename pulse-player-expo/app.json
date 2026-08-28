@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "Pulse Player",
+    "slug": "pulse-player",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": { "resizeMode": "contain", "backgroundColor": "#070709" },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.example.pulseplayer",
+      "infoPlist": {
+        "UIBackgroundModes": ["audio"]
+      }
+    },
+    "android": {
+      "package": "com.example.pulseplayer",
+      "permissions": ["FOREGROUND_SERVICE", "FOREGROUND_SERVICE_MEDIA_PLAYBACK", "WAKE_LOCK"]
+    },
+    "plugins": ["expo-av", "expo-file-system", "expo-haptics", "expo-blur"]
+  }
+}
